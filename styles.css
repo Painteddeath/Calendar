@@ -63,7 +63,8 @@ header {
     font-size: 12px;
 }
 
-.hidden {
+
+#event-modal.hidden {
     display: none;
 }
 

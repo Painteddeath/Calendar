@@ -105,6 +105,9 @@ function closeModal() {
     document.getElementById('event-desc').value = '';
 }
 
+// Ensure modal is hidden on initial load in case CSS fails to apply
+closeModal();
+
 function saveEvent(dateKey) {
     const desc = document.getElementById('event-desc').value.trim();
     const color = document.getElementById('event-color').value;

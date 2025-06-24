@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar with Memos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Calendar</h1>
+        <div id="month-nav">
+            <button id="prev-month">&lt;</button>
+            <span id="current-month"></span>
+            <button id="next-month">&gt;</button>
+        </div>
+    </header>
+    <div id="container">
+        <aside id="sidebar">
+            <h2>Memos</h2>
+            <textarea id="memos" placeholder="Write your notes here..."></textarea>
+            <h2>To-Do List</h2>
+            <input type="text" id="task-input" placeholder="New task...">
+            <button id="add-task">Add</button>
+            <ul id="task-list"></ul>
+        </aside>
+        <main id="calendar-container">
+            <table id="calendar">
+                <thead>
+                    <tr>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                    </tr>
+                </thead>
+                <tbody id="calendar-body">
+                    <!-- Days will be generated here -->
+                </tbody>
+            </table>
+        </main>
+    </div>
+
+    <!-- Modal for adding events -->
+    <div id="event-modal" class="hidden">
+        <div id="modal-content">
+            <h3>Add Event</h3>
+            <input type="text" id="event-desc" placeholder="Event description">
+            <label for="event-color">Color:</label>
+            <input type="color" id="event-color" value="#ffd700">
+            <button id="save-event">Save</button>
+            <button id="cancel-event">Cancel</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

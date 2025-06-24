@@ -64,7 +64,7 @@ header {
 }
 
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 #event-modal {
